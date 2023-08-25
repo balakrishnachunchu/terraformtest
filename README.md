@@ -34,7 +34,7 @@ module "ec2_complete" {
 
   name = local.name
 
-  ami                         = data.aws_ami.amazon_linux.id
+  ami                         = ami-08a52ddb321b32a8c (64-bit (x86)) 
   instance_type               = "c5.xlarge" # used to set core count below
   availability_zone           = element(module.vpc.azs, 0)
   subnet_id                   = element(module.vpc.private_subnets, 0)
